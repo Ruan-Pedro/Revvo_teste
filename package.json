@@ -1,0 +1,10 @@
+{
+  "name": "revvo_teste",
+  "version": "1.0.0",
+  "description": "Teste Técnico da Revvo",
+  "main": "index.js",
+  "repository": "https://github.com/Ruan-Pedro/Revvo_teste",
+  "author": "Ruan-Pedro",
+  "license": "MIT",
+  "private": false
+}
