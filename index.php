@@ -1,3 +1,20 @@
+<?php require_once  __DIR__ . '/config/config.php';
+    $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    if (!$connection) {
+        die('Erro na conexão: ' . mysqli_connect_error());
+    }
+    $query = "SELECT * FROM Cursos";
+    $result = mysqli_query($connection, $query);
+    $cursos = array();
+    while ($row = mysqli_fetch_assoc($result)) {
+        $cursos[] = $row;
+    }
+    // foreach ($cursos as $curso) {
+    //     // Acesse os valores de cada coluna por meio do array associativo $curso
+    //     // echo "ID: " . $curso['ID'] . ", IMAGE: " . $curso['IMAGE'] . ", TITLE: " . $curso['TITLE'] . ", TEXT: " . $curso['TEXT'] . "<br>";
+    //     echo $curso['TITLE'];
+    // }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +35,7 @@
 <body>
     <?php
     include __DIR__ . '/src/views/index.php';
-?>
+    ?>
 </body>
+
 </html>
