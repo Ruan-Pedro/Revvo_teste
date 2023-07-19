@@ -1,0 +1,113 @@
+.courses {
+    padding: 3vh 5vw 5vh 3vw;
+}
+
+.courses .linha {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0 25px 0;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Largura mínima de 300px e máximo de 1fr */
+    gap: 30px;
+    width: 100%;
+}
+
+.courses-container .course-box {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.courses-container .course-box img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.courses-container .course-box .content-course-box {
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.courses-container .course-box h2 {
+    font-size: var(--font-size-medium);
+    margin-top: 10px;
+}
+
+.courses-container .course-box p {
+    font-size: var(--font-size-small);
+    margin-top: 8px;
+    width: 90%;
+    color: var(--body-color-dark);
+}
+
+.courses-container .course-box button {
+    font-size: var(--font-size-small);
+    margin-top: 20px;
+    background-color: var(--buttom-color);
+    border: transparent 0 solid;
+    border-radius: 20px;
+    padding: 12px;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.courses-container .course-box button:hover {
+    background-color: rgb(63, 124, 1);
+}
+
+.courses-container .course-box-empty {
+    border: 3px dashed var(--body-color-dark);
+    border-radius: 2px;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses-container .course-box-empty img {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .courses-container .course-box img {
+        height: 55%;
+    }
+    .courses-container .course-box-empty {
+        padding: 20px;
+    }
+    .courses-container .course-box-empty img {
+        width: 40%;
+    }
+    .footer {
+        padding: 20vh 5vw !important;
+        /* display: flex; */
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-around !important;
+    }
+    .footer .contact-box {
+        flex-direction: column !important;
+        align-items: start  !important;
+        width: 30% !important;
+        justify-content: space-between  !important;
+    }
+    .footer .contact-box h3 {
+        margin-bottom: 5px !important;
+        margin-top: 5px !important;
+    }
+    .footer .contact-box span {
+        font-size: 12px !important;
+    }
+    .footer .contact-box .social-midia img {
+        width: 30px !important;
+    }
+}
