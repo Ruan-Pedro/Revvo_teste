@@ -5,12 +5,12 @@
     <div class="courses-container">
         <?php foreach ($cursos as $curso): ?>
         <div class="course-box">
-            <img src="public/images/course_img.jpg" alt="Imagem do Card">
+            <img src="<?= 'public/images/' . $curso['IMAGE'] ?>" alt="Imagem do Card">
             <div class="content-course-box">
                 <h2><?= $curso['TITLE'] ?></h2>
                 <p><?= $curso['TEXT'] ?></p>
-                <button>VER CURSO</button>
             </div>
+            <button onclick="exibirModalCRUD()">VER CURSO</button>
         </div>
         <?php endforeach; ?>
 
@@ -19,7 +19,5 @@
             <span>ADICIONAR</span>
             <h3>CURSO</h3>
         </div>
-
     </div>
-
 </section>
