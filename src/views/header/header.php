@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="public/css/header.css">
+<link rel="stylesheet" href="dist/css/header.min.css">
 <header class="header">
 
     <div class="logo">
@@ -72,4 +72,4 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="/public/js/main.js"></script>
+<script src="/dist/js/main.js"></script>

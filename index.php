@@ -1,28 +1,11 @@
-<?php require_once  __DIR__ . '/config/config.php';
-    $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-    if (!$connection) {
-        die('Erro na conexão: ' . mysqli_connect_error());
-    }
-    $query = "SELECT * FROM Cursos";
-    $result = mysqli_query($connection, $query);
-    $cursos = array();
-    while ($row = mysqli_fetch_assoc($result)) {
-        $cursos[] = $row;
-    }
-    // foreach ($cursos as $curso) {
-    //     // Acesse os valores de cada coluna por meio do array associativo $curso
-    //     // echo "ID: " . $curso['ID'] . ", IMAGE: " . $curso['IMAGE'] . ", TITLE: " . $curso['TITLE'] . ", TEXT: " . $curso['TEXT'] . "<br>";
-    //     echo $curso['TITLE'];
-    // }
-    ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revvo</title>
-    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="dist/css/main.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -36,6 +19,9 @@
     <?php
     include __DIR__ . '/src/views/index.php';
     ?>
+    <script src="dist/js/env.min.js"></script>
+    <script src="dist/js/crud.min.js"></script>
+    <script src="dist/js/main.min.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="public/css/modal.css">
+<link rel="stylesheet" href="dist/css/modal.min.css">
 <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="fecharModal()">&times;</span>

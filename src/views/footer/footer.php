@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="public/css/footer.css">
+<link rel="stylesheet" href="/dist/css/footer.min.css">
 <footer class="footer">
     <div class="logo-box">
         <div class="logo">
