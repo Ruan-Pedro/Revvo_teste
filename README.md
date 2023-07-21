@@ -41,4 +41,4 @@ git clone https://github.com/Ruan-Pedro/Revvo_teste.git
 # Como Usar
 - Na página inicial, há uma lista de cursos cadastrados no banco de dados
 - Clique no botão "VER CURSO" para exibir os dados do curso em um modal e para editar/excluir o curso
-- Para adicionar um novo curso, clique no botão "ADICIONAR CURSO" na parte inferior da página inicial
+- Para adicionar um novo curso, clique no botão "ADICIONAR CURSO" no ultimo card da lista de cursos
